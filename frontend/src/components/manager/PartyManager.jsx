@@ -49,7 +49,7 @@ export function PartyManager() {
   const fetchSales = async () => {
     try {
       const res = await fetch(
-        `http://localhost:5000/api/party/list/${COMPANY_ID}`
+        `https://gd-2-0-clean.onrender.com/api/party/list/${COMPANY_ID}`
       );
       const data = await res.json();
       if (res.ok) {
